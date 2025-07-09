@@ -1,16 +1,15 @@
 import json
-from pathlib inport Path 
+from pathlib import Path 
 
 
-def load_data(file_path: str):
-    file = Path(file_path)
-    if not file.exists():
+def load_data(file_path):
+    """Load data from a JSON file."""
+    if not Path(file_path).exists():
         return []
+    with open(file_path, "r") as f:
+        return json.load(f)
 
-    with open(file, "r") as f:
-        json.load(f)
 
-
-def save_data(file_path: str, data: list):
+def save_data(file_path, data):
     with open(file_path, "w") as f:
         json.dump(data, f, indent=2)
