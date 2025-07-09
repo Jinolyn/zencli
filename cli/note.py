@@ -12,3 +12,14 @@ def add_note(note: str):
     notes.append(note)
     storage.save_data(notes_path, notes)
     typer.echo(f"✅ Note added: {note}")
+
+@app.command()
+def list_notes():
+    """List all notes."""
+    notes = storage.load_data(notes_path)
+    if not notes:
+        typer.echo("No notes found.")
+    else:
+        typer.echo("📓 Notes:")
+        for i, note in enumerate(notes, start=1):
+            typer.echo(f"{i}. {note}")  
