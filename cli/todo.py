@@ -10,7 +10,7 @@ def add_task(task: str):
     tasks = storage.load_data(todo_path)
     tasks.append(task)
     storage.save_data(todo_path, tasks)
-    typer.echo(f"Task '{task}' added to your to-do list.")
+    typer.echo(f"📌 Task '{task}' ✅ added to your to-do list.")
 
 
 @app.command()
