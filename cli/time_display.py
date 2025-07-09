@@ -1,7 +1,10 @@
 from datetime import datetime
+import typer
 
+app = typer.Typer(help="Time Display CLI")
 
-def get_current_time(self):
+@app.command()
+def get_current_time():
     """Get the current time in a formatted string."""
-    return datetime.now().strftime("%Hh:%Mm")
+    typer.echo(f"🕒 {datetime.now().strftime('%Hh:%Mmn')}")
 
