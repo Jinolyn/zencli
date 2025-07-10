@@ -3,7 +3,8 @@
 ZenCLI is a customizable command-line assistant built in Python.  
 It helps you stay focused and organized every day — with notes, to-dos, journal entries, weather reports, and more.
 
----
+
+- 🇫🇷 [Lire la documentation en français](README_FR.md)
 
 ## ✨ Features
 
