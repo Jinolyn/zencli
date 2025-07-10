@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import typer
 from cli import note, todo, time_display
 
