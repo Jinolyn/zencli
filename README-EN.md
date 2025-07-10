@@ -37,6 +37,9 @@ python3 main.py note add-note "Buy groceries"
 python3 main.py todo add-task "Clean the house"
 
 
+For help:
+    $ python3 main.py --help
+
 🧠 Tech Highlights
 - Typer for CLI interface
 - JSON for local storage (no DB needed)
